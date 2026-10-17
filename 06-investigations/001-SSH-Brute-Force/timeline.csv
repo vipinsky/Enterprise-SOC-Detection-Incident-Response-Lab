@@ -1,0 +1,9 @@
+Timestamp,Event,Account,Source
+2026-10-17 11:56:00.762 +05:30,Failed SSH password,vm2,192.168.34.138
+2026-10-17 11:56:02.964 +05:30,Failed SSH password,vm2,192.168.34.138
+2026-10-17 11:56:07.020 +05:30,Failed SSH password,vm2,192.168.34.138
+2026-10-17 11:56:08.662 +05:30,Failed SSH password,vm2,192.168.34.138
+2026-10-17 11:56:10.848 +05:30,Failed SSH password / Wazuh rule 100200 alert,vm2,192.168.34.138
+2026-10-17 12:10:51–12:11:07 +05:30,Further failed SSH password attempts,vm2,192.168.34.138
+2026-10-17 12:11:35.546 +05:30,Successful password SSH login,vm2,192.168.34.138
+2026-10-17 12:12:09.442 +05:30,Sudo session; tail -n 50 /var/log/auth.log,vm2,local endpoint

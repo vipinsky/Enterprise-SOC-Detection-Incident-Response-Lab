@@ -1,0 +1,10 @@
+Timestamp,Endpoint,Rule ID,Event,Evidence / analyst note
+2026-10-17 13:04:34.094 +05:30,window10,100532,Windows scheduled task created,OneDrive-named task; action points to OneDriveStandaloneUpdater.exe; validate signature/path
+2026-10-17 14:50:20.836 +05:30,ubuntu_vm2,100530,Cron file added,/etc/cron.d/test_persist; root-owned; SHA256 2da5023deafd4da57132d2d8c52332b0063e4eb658f837b84e0d92be126a99df
+2026-10-17 14:52:14.167 +05:30,ubuntu_vm2,100530,Cron file added,/etc/cron.d/test_persist1; root-owned
+2026-10-17 14:53:46.524 +05:30,ubuntu_vm2,100530,Cron file modified,/etc/cron.d/test_persist1; size 74 -> 143; SHA256 changed to 0912ef515f64685158cba92fbd028a9942928dfab90e587ef1bae1b5af76d1b2
+2026-10-17 14:53:56.862 +05:30,ubuntu_vm2,100530,Cron spool temporary file added,/var/spool/cron/crontabs/tmp.96btvJ; owner vm2
+2026-10-17 14:53:56.899 +05:30,ubuntu_vm2,100530,Cron spool temporary file deleted,/var/spool/cron/crontabs/tmp.96btvJ
+2026-10-17 14:53:56.900 +05:30,ubuntu_vm2,100530,User crontab file added,/var/spool/cron/crontabs/vm2
+2026-10-17 14:59:05.198 +05:30,window10,100533,Scheduled task created with scripting engine,\TestPersist1; powershell.exe -command Write-Host persistence_test; repeating one-minute trigger
+2026-10-17 14:59:15.204 +05:30,window10,100532,Scheduled task created,\TestPersist2; creator vipin

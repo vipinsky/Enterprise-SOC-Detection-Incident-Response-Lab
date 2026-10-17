@@ -1,0 +1,4 @@
+Event time (UTC),Wazuh rule,Observed command/behavior,Analyst note
+2026-10-17 07:24:01.504 UTC,Rule 100300,PowerShell -nop -w hidden -ep bypass -c IEX(...).DownloadString('http://google.com'),Lab-like download/execute pattern; investigate context; no execution outcome proven
+2026-10-17 07:25:56.216 UTC,Rule 100300,"powershell.exe -windowstyle hidden -command ""Write-Host test""",Hidden-window flag; test-like command
+2026-10-17 07:30:58.306 UTC,Rule 100301,powershell.exe -enc [Base64 value],Decoded payload is Write-Host 'This is an encoded test command'

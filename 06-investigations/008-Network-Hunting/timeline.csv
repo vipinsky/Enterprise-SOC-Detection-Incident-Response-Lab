@@ -1,0 +1,8 @@
+Approximate timestamp,Endpoint,Rule ID,DNS name / behavior,Process,Analyst note
+2026-10-17 approx. 14:56 IST,window10,100600,wpad,copilotapp.exe,Baseline DNS event; query status must be interpreted in context
+2026-10-17 approx. 14:56–14:57 IST,window10,100600,my.microsoftpersonalcontent.com,OneDrive.exe,Microsoft/OneDrive-related DNS telemetry
+2026-10-17 approx. 14:56 IST,window10,100600,onedriveclucproddm20048.blob.core.windows.net,OneDrive.exe,OneDrive-related DNS telemetry
+2026-10-17 18:15:31.312 IST (indexed),window10 / 192.168.34.152,100604,suspicious-test-domain.xyz,powershell.exe PID 1696; user vipin,Level 10; ATT&CK T1568; queryStatus 9003
+2026-10-17 18:15:31.354 IST (indexed),window10 / 192.168.34.152,100604,another-test.top,powershell.exe PID 1696; user vipin,Level 10; ATT&CK T1568; queryStatus 9003
+2026-10-17 18:16:44.727 IST (indexed),window10 / 192.168.34.152,100600,example.com,powershell.exe PID 1696,QueryStatus 0; results included ::ffff:104.20.23.154 and ::ffff:172.66.147.243
+2026-10-17 18:17:39.024 IST (indexed),window10,100600,microsoft.com,Not shown in current snippet,Baseline DNS event

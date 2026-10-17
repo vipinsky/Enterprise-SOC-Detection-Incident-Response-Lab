@@ -1,0 +1,5 @@
+Timestamp,OS,Endpoint,Account,Wazuh rule,Alert level,Evidence note
+2026-10-17 13:58:12.255546 +05:30,Linux,ubuntu_vm2 / 192.168.34.143,testuser_basic,100510,Level 8,UID/GID 1001; /home/testuser_basic; /bin/sh
+2026-10-17 13:59:24.485296 +05:30,Linux,ubuntu_vm2 / 192.168.34.143,testuser_sudo,100511,Level 10,UID/GID 1002; /home/testuser_sudo; /bin/bash; actual sudo membership unverified
+2026-10-17 14:03:08.872 +05:30,Windows,window10 / 192.168.34.148,testuser_win,100501,Level 10,Security Event ID 4720; created by vipin; disabled/password-not-required flags shown in event
+2026-10-17 14:03:59.299 +05:30,Windows,window10 / 192.168.34.148,testuser_ps,100501,Level 10,Security Event ID 4720; created by vipin

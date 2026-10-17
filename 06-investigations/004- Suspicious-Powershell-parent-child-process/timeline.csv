@@ -1,0 +1,4 @@
+Timestamp,Wazuh rule ID,Observed behavior,Evidence / analyst note
+2026-10-17 13:28:47.016 +05:30,100302,Office WINWORD.EXE spawned PowerShell,PID 11572; parent PID 5488; command: Write-Host test; simulated C:\FakeOffice path
+2026-10-17 13:30:10.696 +05:30,100303,Browser chrome.exe spawned PowerShell,PID 7852; parent PID 13128; command: Write-Host test; simulated C:\FakeBrowser path
+2026-10-17 13:30:23.236 +05:30,100304,PDF AcroRd32.exe spawned PowerShell,PID 8908; parent PID 13056; command: Write-Host test; simulated C:\FakePDF path
